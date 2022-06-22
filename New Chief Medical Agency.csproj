@@ -67,9 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\StyleSheet1.css" />
     <Content Include="Global.asax" />
+    <Content Include="Media\Pills_bg.jpg" />
     <Content Include="Web.config" />
     <Content Include="Webpages\Admin_Home.aspx" />
+    <Content Include="Webpages\StockManagerHomePage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -83,6 +86,13 @@
     <Compile Include="Webpages\Admin_Home.aspx.designer.cs">
       <DependentUpon>Admin_Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Webpages\StockManagerHomePage.aspx.cs">
+      <DependentUpon>StockManagerHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\StockManagerHomePage.aspx.designer.cs">
+      <DependentUpon>StockManagerHomePage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -95,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Db\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
