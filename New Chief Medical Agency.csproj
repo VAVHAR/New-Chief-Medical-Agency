@@ -53,6 +53,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -69,9 +70,13 @@
   <ItemGroup>
     <Content Include="css\StyleSheet1.css" />
     <Content Include="Global.asax" />
+    <Content Include="Media\logo-removebg-preview.png" />
     <Content Include="Media\Pills_bg.jpg" />
     <Content Include="Web.config" />
     <Content Include="Webpages\Admin_Home.aspx" />
+    <Content Include="Webpages\Admin_Order.aspx" />
+    <Content Include="Webpages\Admin_Stock.aspx" />
+    <Content Include="Webpages\Login.aspx" />
     <Content Include="Webpages\StockManagerHomePage.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +90,27 @@
     </Compile>
     <Compile Include="Webpages\Admin_Home.aspx.designer.cs">
       <DependentUpon>Admin_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webpages\Admin_Order.aspx.cs">
+      <DependentUpon>Admin_Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\Admin_Order.aspx.designer.cs">
+      <DependentUpon>Admin_Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webpages\Admin_Stock.aspx.cs">
+      <DependentUpon>Admin_Stock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\Admin_Stock.aspx.designer.cs">
+      <DependentUpon>Admin_Stock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webpages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webpages\StockManagerHomePage.aspx.cs">
       <DependentUpon>StockManagerHomePage.aspx</DependentUpon>
