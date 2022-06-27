@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Admin_Stock.aspx.cs" Inherits="New_Chief_Medical_Agency.Webpages.Admin_Stock" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Admin_Stock.aspx.cs" EnableEventValidation="false" Inherits="New_Chief_Medical_Agency.Webpages.Admin_Stock" %>
 
 <!DOCTYPE html>
 
@@ -22,7 +22,7 @@
                             <h2>ADMIN</h2>
                         </div>
                         <div class="p-2" style="width: 20%">
-                            <asp:Button ID="buttonlogout" runat="server" Text="Logout" BackColor="#dc3545" BorderStyle="None" ForeColor="White" />
+                            <asp:Button ID="buttonlogout" runat="server" Text="Logout" BackColor="#dc3545" BorderStyle="None" ForeColor="White" OnClick="buttonlogout_Click" />
                         </div>
                     </div>
                 </div>
@@ -33,13 +33,13 @@
                 <div class="p-2" style="background-color: #e3f2fd;">
                     <div class="d-flex flex-row justify-content-center" style="font-size:15px;">
                         <div class="p-2">
-                            <asp:Button ID="btnusers" runat="server" CssClass="btn btn-light"  Width="80px" Height="30px" Text="Users" BackColor="#E3F2FD" BorderColor="#E3F2FD" BorderStyle="None" />
+                            <asp:Button ID="btnusers" runat="server" CssClass="btn btn-light"  Width="80px" Height="30px" Text="Users" BackColor="#E3F2FD" BorderColor="#E3F2FD" BorderStyle="None" OnClick="btnusers_Click" />
                         </div>
                         <div class="p-2">
-                            <asp:Button ID="btnstocks" runat="server" CssClass="btn btn-light"  Width="80px" Height="30px" Text="Stocks" BackColor="#E3F2FD" BorderColor="#E3F2FD" BorderStyle="None" />
+                            <asp:Button ID="btnstocks" runat="server" CssClass="btn btn-light"  Width="80px" Height="30px" Text="Stocks" BackColor="#E3F2FD" BorderColor="#E3F2FD" BorderStyle="None" OnClick="btnstocks_Click" />
                         </div>
                         <div class="p-2">
-                            <asp:Button ID="btnorders" runat="server" CssClass="btn btn-light"  Width="80px" Height="30px" Text="Orders" BackColor="#E3F2FD" BorderColor="#E3F2FD" BorderStyle="None" />
+                            <asp:Button ID="btnorders" runat="server" CssClass="btn btn-light"  Width="80px" Height="30px" Text="Orders" BackColor="#E3F2FD" BorderColor="#E3F2FD" BorderStyle="None" OnClick="btnorders_Click" />
                         </div>
                     </div>
                 </div>
@@ -47,6 +47,18 @@
                     <p>
                         List of Stock On Hand
                     </p>
+
+                     <div class="p-2" >
+                        <div class="d-flex flex-row justify-content-right" style="font-size: 15px;">
+                            <div class="p-2">
+                                <asp:TextBox ID="txtsearch" runat="server" CssClass="form-control mr-sm-2" Width="200px" Height="30px" placeholder="Search" BackColor="#E3F2FD" BorderColor="#E3F2FD" BorderStyle="None" />
+                            </div>
+                            <div class="p-2">
+                                <asp:Button ID="btnsearch" runat="server" Text="Search" CssClass="btn btn-success" OnClick="btnsearch_Click" />
+                            </div>
+                        </div>
+                    </div>
+
                    
                     <hr style="background-color: #a5b3c1" />
 
@@ -73,7 +85,7 @@
                     <asp:SqlDataSource ID="Stocks" runat="server" ConnectionString="<%$ ConnectionStrings:NCMAConnectionString %>" SelectCommand="SELECT * FROM [Stock_tbl]"></asp:SqlDataSource>
 
                     <div style="text-align:center; margin-top:10px;">
-                           <asp:button ID="btngenstockrepo" runat="server" class="btn btn-primary" Text="Genrate Stocks Report" Width="150px" Height="30px" Font-Size="Small"/>
+                           <asp:button ID="btngenstockrepo" runat="server" class="btn btn-primary" Text="Genrate Stocks Report" Width="150px" Height="30px" Font-Size="Small" OnClick="btngenstockrepo_Click"/>
                         </div>
                 </div>
             </div>

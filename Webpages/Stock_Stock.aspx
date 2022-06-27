@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Admin_Order.aspx.cs" Inherits="New_Chief_Medical_Agency.Webpages.Admin_Order" %>
+﻿    <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Stock_Stock.aspx.cs" Inherits="New_Chief_Medical_Agency.Webpages.Stock_Stock" %>
 
 <!DOCTYPE html>
 
@@ -19,7 +19,7 @@
                 <div class="p-2" style="height: 70px; text-align: center;">
                     <div class="d-flex flex-row ">
                         <div class="p-6" style="width: 80%">
-                            <h2>ADMIN</h2>
+                            <h2>STOCK MANAGER</h2>
                         </div>
                         <div class="p-2" style="width: 20%">
                             <asp:Button ID="buttonlogout" runat="server" Text="Logout" BackColor="#dc3545" BorderStyle="None" ForeColor="White" OnClick="buttonlogout_Click" />
@@ -33,7 +33,7 @@
                 <div class="p-2" style="background-color: #e3f2fd;">
                     <div class="d-flex flex-row justify-content-center" style="font-size:15px;">
                         <div class="p-2">
-                            <asp:Button ID="btnusers" runat="server" CssClass="btn btn-light"  Width="80px" Height="30px" Text="Users" BackColor="#E3F2FD" BorderColor="#E3F2FD" BorderStyle="None" OnClick="btnusers_Click" />
+                            <asp:Button ID="btnusers" runat="server" CssClass="btn btn-light"  Width="80px" Height="30px" Text="Product" BackColor="#E3F2FD" BorderColor="#E3F2FD" BorderStyle="None" OnClick="btnusers_Click" />
                         </div>
                         <div class="p-2">
                             <asp:Button ID="btnstocks" runat="server" CssClass="btn btn-light"  Width="80px" Height="30px" Text="Stocks" BackColor="#E3F2FD" BorderColor="#E3F2FD" BorderStyle="None" OnClick="btnstocks_Click" />
@@ -45,21 +45,31 @@
                 </div>
                 <div class="p-2">
                     <p>
-                        Listed information of Orders Placed 
+                        List of Stock On Hand
                     </p>
                    
+                     <div class="p-2" >
+                        <div class="d-flex flex-row justify-content-right" style="font-size: 15px;">
+                            <div class="p-2">
+                                <asp:TextBox ID="txtsearch" runat="server" CssClass="form-control mr-sm-2" Width="200px" Height="30px" placeholder="Search" BackColor="#E3F2FD" BorderColor="#E3F2FD" BorderStyle="None" />
+                            </div>
+                            <div class="p-2">
+                                <asp:Button ID="btnsearch" runat="server" Text="Search" CssClass="btn btn-success" OnClick="btnsearch_Click" />
+                            </div>
+                        </div>
+                    </div>
+
                     <hr style="background-color: #a5b3c1" />
 
-                    <asp:GridView ID="GridOrders" runat="server" AllowPaging="True" AllowSorting="True"  AutoGenerateColumns="False" CellPadding="4" DataSourceID="Orders" ForeColor="#333333" GridLines="None" Width="489px" PageSize="7">
+                    <asp:GridView ID="GridStocks" runat="server" AllowPaging="True" AllowSorting="True"  AutoGenerateColumns="False" CellPadding="4" DataSourceID="StockPage" ForeColor="#333333" GridLines="None" Width="489px" PageSize="7" DataKeyNames="ProductId">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
-                            <asp:BoundField DataField="OrderId" HeaderText="OrderId" SortExpression="OrderId" />
-                            <asp:BoundField DataField="OrderDate" HeaderText="OrderDate" SortExpression="OrderDate" />
-                            <asp:BoundField DataField="ClientId" HeaderText="ClientId" SortExpression="ClientId" />
-                            <asp:BoundField DataField="ClientName" HeaderText="ClientName" SortExpression="ClientName" />
+                            <asp:BoundField DataField="ProductId" HeaderText="ProductId" SortExpression="ProductId" ReadOnly="True" />
                             <asp:BoundField DataField="ProductName" HeaderText="ProductName" SortExpression="ProductName" />
-                            <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
-                            <asp:BoundField DataField="TotalPrice" HeaderText="TotalPrice" SortExpression="TotalPrice" />
+                            <asp:BoundField DataField="ProductPrice" HeaderText="ProductPrice" SortExpression="ProductPrice" />
+                            <asp:BoundField DataField="ProductType" HeaderText="ProductType" SortExpression="ProductType" />
+                            <asp:BoundField DataField="SupplierName" HeaderText="SupplierName" SortExpression="SupplierName" />
+                            <asp:BoundField DataField="ProductQuantity" HeaderText="ProductQuantity" SortExpression="ProductQuantity" />
                         </Columns>
                         <EditRowStyle BackColor="#2461BF" />
                         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -74,10 +84,10 @@
                         <SortedDescendingHeaderStyle BackColor="#4870BE" />
                     </asp:GridView>
 
-                    <asp:SqlDataSource ID="Orders" runat="server" ConnectionString="<%$ ConnectionStrings:NCMAConnectionString %>" SelectCommand="SELECT * FROM [Order_tbl]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="StockPage" runat="server" ConnectionString="<%$ ConnectionStrings:NCMAConnectionString %>" SelectCommand="SELECT * FROM [Product_tbl]"></asp:SqlDataSource>
 
                     <div style="text-align:center; margin-top:10px;">
-                           <asp:button ID="btngenorderrepo" runat="server" class="btn btn-primary" Text="Genrate Orders Report" Width="150px" Height="30px" Font-Size="Small"/>
+                           <asp:button ID="btngenstockrepo" runat="server" class="btn btn-primary" Text="Genrate Stocks Report" Width="150px" Height="30px" Font-Size="Small"/>
                         </div>
                 </div>
             </div>

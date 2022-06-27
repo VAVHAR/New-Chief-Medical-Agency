@@ -11,7 +11,7 @@ namespace New_Chief_Medical_Agency.Webpages
 {
 
 
-    public partial class Login
+    public partial class Stock_Stock
     {
 
         /// <summary>
@@ -24,66 +24,84 @@ namespace New_Chief_Medical_Agency.Webpages
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// radiouserrole control.
+        /// buttonlogout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList radiouserrole;
+        protected global::System.Web.UI.WebControls.Button buttonlogout;
 
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// btnusers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.Button btnusers;
 
         /// <summary>
-        /// TxtuserId control.
+        /// btnstocks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtuserId;
+        protected global::System.Web.UI.WebControls.Button btnstocks;
 
         /// <summary>
-        /// TxtPassword control.
+        /// btnorders control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtPassword;
+        protected global::System.Web.UI.WebControls.Button btnorders;
 
         /// <summary>
-        /// btnsubmit control.
+        /// txtsearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnsubmit;
+        protected global::System.Web.UI.WebControls.TextBox txtsearch;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// btnsearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.Button btnsearch;
 
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// GridStocks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.GridView GridStocks;
+
+        /// <summary>
+        /// StockPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource StockPage;
+
+        /// <summary>
+        /// btngenstockrepo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btngenstockrepo;
     }
 }

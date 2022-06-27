@@ -60,13 +60,31 @@ namespace New_Chief_Medical_Agency.Webpages
         protected global::System.Web.UI.WebControls.Button btnorders;
 
         /// <summary>
-        /// GridView1 control.
+        /// txtsearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.TextBox txtsearch;
+
+        /// <summary>
+        /// btnsearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnsearch;
+
+        /// <summary>
+        /// gridusers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gridusers;
 
         /// <summary>
         /// Users control.

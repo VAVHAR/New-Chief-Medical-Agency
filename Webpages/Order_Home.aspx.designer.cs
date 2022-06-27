@@ -11,7 +11,7 @@ namespace New_Chief_Medical_Agency.Webpages
 {
 
 
-    public partial class Admin_Stock
+    public partial class Order_Home
     {
 
         /// <summary>
@@ -33,13 +33,13 @@ namespace New_Chief_Medical_Agency.Webpages
         protected global::System.Web.UI.WebControls.Button buttonlogout;
 
         /// <summary>
-        /// btnusers control.
+        /// btnproduct control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnusers;
+        protected global::System.Web.UI.WebControls.Button btnproduct;
 
         /// <summary>
         /// btnstocks control.
@@ -60,48 +60,84 @@ namespace New_Chief_Medical_Agency.Webpages
         protected global::System.Web.UI.WebControls.Button btnorders;
 
         /// <summary>
-        /// txtsearch control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsearch;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// btnsearch control.
+        /// Product control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnsearch;
+        protected global::System.Web.UI.WebControls.SqlDataSource Product;
 
         /// <summary>
-        /// GridStocks control.
+        /// Txtproid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridStocks;
+        protected global::System.Web.UI.WebControls.TextBox Txtproid;
 
         /// <summary>
-        /// Stocks control.
+        /// Txtprotype control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource Stocks;
+        protected global::System.Web.UI.WebControls.TextBox Txtprotype;
 
         /// <summary>
-        /// btngenstockrepo control.
+        /// Txtproname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btngenstockrepo;
+        protected global::System.Web.UI.WebControls.TextBox Txtproname;
+
+        /// <summary>
+        /// Txtprosup control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txtprosup;
+
+        /// <summary>
+        /// Txtproquan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txtproquan;
+
+        /// <summary>
+        /// Txtproprice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txtproprice;
+
+        /// <summary>
+        /// btnsaveproduct control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnsaveproduct;
     }
 }

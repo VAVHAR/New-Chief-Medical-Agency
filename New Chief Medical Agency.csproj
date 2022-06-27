@@ -43,6 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itextsharp.xmlworker.5.5.13.3\lib\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -71,13 +80,18 @@
     <Content Include="css\StyleSheet1.css" />
     <Content Include="Global.asax" />
     <Content Include="Media\logo-removebg-preview.png" />
+    <Content Include="Media\new chieef logo.png" />
     <Content Include="Media\Pills_bg.jpg" />
     <Content Include="Web.config" />
     <Content Include="Webpages\Admin_Home.aspx" />
     <Content Include="Webpages\Admin_Order.aspx" />
     <Content Include="Webpages\Admin_Stock.aspx" />
     <Content Include="Webpages\Login.aspx" />
+    <Content Include="Webpages\Order_Home.aspx" />
     <Content Include="Webpages\StockManagerHomePage.aspx" />
+    <Content Include="Webpages\Stock_Orders.aspx" />
+    <Content Include="Webpages\Stock_Product.aspx" />
+    <Content Include="Webpages\Stock_Stock.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -112,12 +126,40 @@
     <Compile Include="Webpages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Webpages\Order_Home.aspx.cs">
+      <DependentUpon>Order_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\Order_Home.aspx.designer.cs">
+      <DependentUpon>Order_Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Webpages\StockManagerHomePage.aspx.cs">
       <DependentUpon>StockManagerHomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Webpages\StockManagerHomePage.aspx.designer.cs">
       <DependentUpon>StockManagerHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webpages\Stock_Orders.aspx.cs">
+      <DependentUpon>Stock_Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\Stock_Orders.aspx.designer.cs">
+      <DependentUpon>Stock_Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webpages\Stock_Product.aspx.cs">
+      <DependentUpon>Stock_Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\Stock_Product.aspx.designer.cs">
+      <DependentUpon>Stock_Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webpages\Stock_Stock.aspx.cs">
+      <DependentUpon>Stock_Stock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webpages\Stock_Stock.aspx.designer.cs">
+      <DependentUpon>Stock_Stock.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
